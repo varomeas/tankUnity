@@ -4,31 +4,23 @@ using UnityEngine;
 
 public class DamageController : MonoBehaviour
 {
-    [SerializeField] private int damage = 10;
-    [SerializeField] private HealthController playerHealth;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int damage = 10; // Dégâts infligés par ce contrôleur
+    [SerializeField] private HealthController playerHealth; // Référence au contrôleur de santé du joueur
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    // Méthode appelée lorsqu'un autre collider entre en contact avec ce collider
     private void OnTriggerEnter(Collider other)
     {
+        // Si l'objet entrant a le tag "Player" et que playerHealth n'est pas null
         if(other.CompareTag("Player") && playerHealth != null)
         {
-            playerHealth.TakeDamage(damage);
+            playerHealth.TakeDamage(damage); // Infliger des dégâts au joueur
         }
 
+        // Si l'objet entrant a le tag "Obstacle"
         if(other.CompareTag("Obstacle"))
         {
-            other.gameObject.GetComponent<HealthController>().TakeDamage(damage);
-            Destroy(gameObject);
+            other.gameObject.GetComponent<HealthController>().TakeDamage(damage); // Infliger des dégâts à l'obstacle
+            Destroy(gameObject); // Détruire cet objet après avoir infligé des dégâts
         }
     }
 }
