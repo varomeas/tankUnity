@@ -64,8 +64,102 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocher
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d53f5d137e36046fca7e82e343245afb, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d53f5d137e36046fca7e82e343245afb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4326315250205293087}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d53f5d137e36046fca7e82e343245afb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1724520023824522426}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d53f5d137e36046fca7e82e343245afb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8959272344027015356}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d53f5d137e36046fca7e82e343245afb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1686459276525863826}
   m_SourcePrefab: {fileID: 100100000, guid: d53f5d137e36046fca7e82e343245afb, type: 3}
+--- !u!1 &5307950061177300497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d53f5d137e36046fca7e82e343245afb, type: 3}
+  m_PrefabInstance: {fileID: 5001469096130337600}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4326315250205293087
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5307950061177300497}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8615226438602513191, guid: d53f5d137e36046fca7e82e343245afb, type: 3}
+--- !u!65 &1724520023824522426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5307950061177300497}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.006749832, y: 0.012118758, z: 0.006516317}
+  m_Center: {x: -0.00016764371, y: 0.000548755, z: 0.0030736339}
+--- !u!114 &8959272344027015356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5307950061177300497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e89b4ddd63dd47bc84da16c88ac4415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  playerHealth: {fileID: 0}
+--- !u!114 &1686459276525863826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5307950061177300497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ef2e3c5fb674ef4b2affe3d892bb53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxhealth: 20
+  slider: {fileID: 0}
+  fillImage: {fileID: 0}
+  deathEffect: {fileID: 2348898465751874737, guid: 71dae9f15110d4117b26476aa2e546f3, type: 3}
